@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
   </head>
  <body>
+  <!-- по хедеру и навигации смотри парвки в Index -->
  	<header class="main-header">
   		<a class="main-logo">
   			<img src="img/logo" alt="GllacyShop">
@@ -19,7 +20,9 @@
 	  		<ul class="nav-users">
 	  			<li><a href="search">Поиск</a></li>
 	  			<li><a href="login">Вход</a></li>
-	  			<li><a href="basket">Корзина</a></li>
+	  			<li><a href="basket">Корзина</a>
+          <!-- тут модалка корзины -->
+          </li>
 	  		</ul>
   		</nav>  
   		<section class="time-tell">
@@ -33,7 +36,10 @@
 			<li><a href="#">Главная</a></li>
 			<li><a href="#">Каталог</a></li>
 			<li>Сливочное</li>
-		</ul>			
+		</ul>
+      <!-- тут должны быть h1 Сливочное мороженое -->
+      
+      <!-- сортировку рассмторим позже, как пройдете курс по формам -->
   		<section class="filters-control">
   			<h2>Фильтры товаров</h2>
   			<section class="text-control">
@@ -69,9 +75,14 @@
   			</section>
   			<span class="form-send">Применить</span>
   		</section>
+      
+      
   		<section class="catalog">
+        <!-- забываешь скрывать заголовки через v-hidden -->
   			<h2>Список мороженого</h2>
   			<ul class="catalog-list">
+          
+          <!-- мороженки оформляй как я написал в индексе -->
   				<li class="catalog-item">
   					<a href="#"><img src="img/#" alt=""></a>
   					<span class="price">310Р/кг</span>
@@ -160,7 +171,11 @@
 		<img src="img/logo-htmlacadedmy.jpeg" alt="Логотип HTML Academy">
 		<p>Сделано в <a href="http://www.htmlacademy.ru">HTML Academy</a>* 2017</p>
   	</footer>
+   
+   <!-- баскет должна быть вверху -->
   	<section class="basket">
+     <!-- Сделай через таблицу, где tr - вся стркоа, первый td - button с крестиком,2-4 тексты из макета
+          После табоицы с 2 товарами идет блок с total-priceи после нее ссылка как кнопка -->
   		<ul>
   			<li>###</li>
   			<li>###</li>
