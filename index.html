@@ -21,155 +21,149 @@
 			  			<li><a href="#">Фруктовый лед</a></li>
 			  			<li><a href="#">Мелорин</a></li>
 	  					</ul>
-	  				</li>  	
-	          <!-- вот тут main-menu -->
-	          </li>
+	  				</li>
 		  			<li><a href="delivery.html">Доставка и оплата</a></li>
 		  			<li><a href="about.html">О компании</a></li>
-		  		</ul>
+				</ul>
 		  		<ul class="nav-users">
 		  			<li><a href="search">Поиск</a>
-	          <!-- тут модалка поиска -->
-	          </li>
+	  					<form class="form-search" method="post" action="https://echo.htmlacademy.ru">
+							<input type="search" name="search" value="Что ищем?">
+						</form>
+	          		</li>
 		  			<li><p><a href="login">Вход</a></p>
-	          <!-- модалка входа -->
-					<section class="form-login">
-	      <!-- Откуда тут вход? -->
-		  				<p class="caption-form">вход</p>
-		      				
-		      			<form method="post"
-          action="https://echo.htmlacademy.ru" class="from-entrance">
-		      <!-- Это инпут -->
-		  				<input type="login" name=""> class="form-email">Электронная почта</span>
-		      <!-- и это инпут -->
-		  				<span class="form-password">Пароль</span>
-		      <!-- это кнопка -->
-		  				<span class="botton-entrence">Войти</span>
-				  		<div class="password-sign-up">
-				  			<a href="#">Забыли пароль?</a>
-				  			<a href="#">Новая регистрация</a>
-				  		</div>
-	      <!-- /form --></form>
-	  				</section>
-	          		
-
-
-
+		          		<section class="form-login">		      				
+			      			<form method="post" action="https://echo.htmlacademy.ru" class="from-entrance">
+			       				<p><label>Электронная почта
+			       					<input class="form-email" type="login" name="login" value="Электронная почта">
+			     				</label></p>
+			     				<p><label>Пароль
+			     					<input class="form-password" type="password" name="login" value="Пароль">
+			     				</label></p>
+			     		  		<p><button class="button-entrence" type="button" name="exit" value="Войти">Войти</button></p>
+					  			<!-- <div class="password-sign-up"> Не уверен что этот div вообще нужен -->
+					  			<p><a href="https://echo.htmlacademy.ru">Забыли пароль?</a></p>
+					  			<p><a href="https://echo.htmlacademy.ru">Новая регистрация</a></p>
+					  			<!-- </div> -->
+		      				</form>
+		  				</section>
 	          		</li>
 		  			<li><a href="basket">Корзина</a></li>
 		  		</ul>
 	  		</nav>  
 	  		<section class="time-tell">
-	        <!-- p и спан должны быть отдельные элементы, а не спан вложенный в p Лучше вообще, телефон разметить тоже через p или через a-->
-	  			<p>С 10 до 20, ежедневно<br>
-				<span>8 812 450-25-25</span>
+	        	<p>С 10 до 20, ежедневно<br>
+				<em>8 812 450-25-25</em>
 	  			</p>
 	  		</section>		
 	  	</header>
 	  	<main class="container">
 	  		<h1 class="visually-hidden">Магазин мороженого Глэйси</h1>
-	      <!-- вот тут нужно сделать блок родитель для всех слайдов для секции со слайдам.
-	          В этой секции, в свою очередеь должен быть блок с пагинацией (какой .slider-control) и ul.sliderlist, в котором li - это твой slider-item -->
-	  		<section class="slider-item">
-	        <!-- картинки буду как Background, так что вообще убери figure -->
-	  			<figure class="img-promo">
-	  				<img src="img/promo.jpeg" alt="Две мороженки">
-	  			</figure>
-	  			<p>Крем-брюле и пломбир с малиновым джемом</p>
-	        
-	        <!-- ты пишешь класс button и даешь спан ? Вообще, это ссылка -->
-	  			<span class="button-give">Давайте оба</span>
-	  		</section>
+	        	<section class="slider">
+				  	<section class="slider-control">
+				  		<ul class="sliderlist">
+					  		<li><section class="slider-item">
+					  			<p>Крем-брюле и пломбир с малиновым джемом</p>
+					        	<a href="https://echo.htmlacademy.ru" class="button-give">Давайте оба</a>
+					  			</section>
+					  		</li>
+					  		<li><section class="slider-item">
+					  			<p>Крем-брюле и пломбир с малиновым джемом</p>
+					        	<a href="https://echo.htmlacademy.ru" class="button-give">Давайте оба</a>
+					  			</section>
+					  		</li>
+					  		<li><section class="slider-item">
+					  			<p>Крем-брюле и пломбир с малиновым джемом</p>
+					        	<a href="https://echo.htmlacademy.ru" class="button-give">Давайте оба</a>
+					  			</section>
+					  		</li>
+					  	</ul>
+					</section>
+	  			</section>
 	      <!-- Для промоблоков нужен общий родитель -->
-	  		<section class="promo-jam">
-	  			<h2>Малинка даром!</h2>
-	  			<p>При покупке 2кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-	        <!-- ссылка !!! -->
-	  			<span class="button-give-jam">Хочу варенье!</span>
-	  		</section>
-	  		<section class="promo-chocolate">
-	  			<h2>Шоколадки даром!</h2>
-	  			<p>При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-	        <!-- ссылка !!! -->
-	  			<span class="button-give-chocolate">Хочу шоколадки!</span>
-	  		</section>
+		  	<section class="promo">
+		  		<section class="promo-jam">
+		  			<h2>Малинка даром!</h2>
+		  			<p>При покупке 2кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+		  			<a href="https://echo.htmlacademy.ru" class="button-give-jam">Хочу варенье!</a>
+		  		</section>
+		  		<section class="promo-chocolate">
+		  			<h2>Шоколадки даром!</h2>
+		  			<p>При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+		  			<a class="button-give-chocolate" href="https://echo.htmlacademy.ru">Хочу шоколадки!</span>
+		  		</section>
+		  	</section>
 	  		<section class="ice-top">
 				<ul>
 					<li>
-	          <!-- img хит убери, он будет сделан через псевдоэелемнт -->
-						<img src="img/hit.jpeg" alt="Хит">
-	          <!-- обверни в тег figure -->
-						<img src="img/orange-jam.jpeg" alt="Сливочное мороженое с апельсиновым джемом">
-						<p>310R<span>/кг</span></p>
-	          <!-- тут создай блок какой-то с классом hidden, в которого положи ссылку. Смотри стайл гайд. При наведнии должно быть состояние другое -->
-					</li>
-	        
-	        <!-- аналогично первому блоку -->
-					<li>
-						<img src="img/hit.jpeg" alt="Хит">
-						<img src="img/coffe-cream.jpeg" alt="Шоколадное мороженое">
-						<p>380R<span>/кг</span></p>
-					</li>
-					<li>
-						<img src="img/hit.jpeg" alt="Хит">
-						<img src="img/strawberry-cream.jpeg" alt="Клубничное мороженое">
-						<p>355R<span>/кг</span></p>
+	                    <figure>
+							<img src="img/orange-jam.jpeg" alt="Сливочное мороженое с апельсиновым джемом">
+							<p>310R<sub>/кг</sub></p>
+						</figure> <!-- Не уверен/ может лучше использовать figcaption -->
+						<div class="visually-hidden"><a href="https://echo.htmlacademy.ru">Быстрый просмотр</a></div>
+	          		</li>
+	           		<li>
+						<figure>
+							<img src="img/coffe-cream.jpeg" alt="Шоколадное мороженое">
+							<p>380R<sub>/кг</sub></p>
+						</figure>
+						<div class="visually-hidden"><a href="https://echo.htmlacademy.ru">Быстрый просмотр</a></div>
 					</li>
 					<li>
-						<img src="img/hit.jpeg" alt="Хит">
-						<img src="img/caramel-cream.jpeg" alt="Крем-брюле">
-						<p>415R<span>/кг</span></p>
+						<figure>
+							<img src="img/strawberry-cream.jpeg" alt="Клубничное мороженое">
+							<p>355R<sub>/кг</sub></p>
+						</figure>
+						<div class="visually-hidden"><a href="https://echo.htmlacademy.ru">Быстрый просмотр</a></div>
+ 					</li>
+					<li>
+						<figure>
+							<img src="img/caramel-cream.jpeg" alt="Крем-брюле">
+							<p>415R<sub>/кг</sub></p>
+						</figure>
+						<div class="visually-hidden"><a href="https://echo.htmlacademy.ru">Быстрый просмотр</a></div>
 					</li>
 				</ul>
 	  		</section>
-	      
-	      <!-- не артикль, а section.features container -->
-	  		<article>
+	       	<section class="features-container">
 	  			<h3>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
-	        
-	        <!-- Это список преимуществ. Лучше разметить через ul>li. Где Li - Это текущий твой p. Не забудь добавить классы -->
-	  			<p>Все наше мороженое изготавливается на собственном прозводстве, с использованием современного оборудования и проверенных временем технологий.</p>
-	  			<p>Для приготовления мороженого используются настоящиее сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологического чистого сырья.</p>
-	  			<p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долго временное сотрудничество.</p>
-	  			<p>Доставка нашего мороженого до заказчика осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
-	  		</article>
-	      
-	      
-	  		<article class="blog-news">
-	        
-	        <!-- p и а - дава отдельный блока, не вложенные друг в друга --Ю
-	  			<p>Новое в нашем блоге<br>
+		           	<ul class="advantages-list">
+			  			<li class="production">Все наше мороженое изготавливается на собственном прозводстве, с использованием современного оборудования и проверенных временем технологий.</li>
+			  			<li class="products">Для приготовления мороженого используются настоящиее сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологического чистого сырья.</p>
+			  			<li class="cooperation">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долго временное сотрудничество.</li>
+			  			<li class="delivery-save">Доставка нашего мороженого до заказчика осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+		  			</ul>
+	  		</section>
+	     	<article class="blog-news">
+	  			<p>Новое в нашем блоге</p>
 				<a href="blog.html">10 способов сервировки фруктовоых щербетов к столу</a>
-	  			</p>
 	  		</article>
-
-	  		<section class="subscription">
+			<section class="subscription">
 	  			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 	  			<!-- это инпут -->
-	        <span class="email-form">Электронная почта</span>
-	        
-	        <!-- это кнопка button!-->
-	  			<span class="botton-email-form">Отправить</span>
+	        	<form>
+	        		<label>Электронная почта
+	        		<input class="email-form" method="post" action="https://echo.htmlacademy.ru" type="email">
+	        		</label>
+	  			<input class="botton-email-form" type="button" value="Отправить">
+	  			</form>
 	  		</section>
 	      
 	  		<section class="map">
 	  			<span>Здесь будет карта, скорее всего скрипт. Если скрипт, то будет ниже. Но я не уверен.</span>
-			</section>
-	      
-	    <!-- section.addres должна быть внутри section.map. Илучше div, a ne section для addres -->  
-			<section class="addres">
-				<p>Адрес главного офиса и офлайн-магазина:<br>
+				<div class="addres">
+					<p>Адрес главного офиса и офлайн-магазина:<br>
 					<em>ул. Большая Конюшенная<br>
 					    19/8, Санкт-Петербург</em>
-				</p>
-				<p>Для заказа по телефону:<br>
-	        <!-- не em, а ссылкой -->
-				   <em>8 812 450-25-25</em><br>
-				   (с 10 до 20 ежедневно)
-				</p>
-	      
-	      <!-- кнопка ! -->
-				<span class="feedback">Форма обратной связи</span>
+					</p>
+					<p>Для заказа по телефону:<br>
+				    <a href="">8 812 450-25-25</a><br>
+				    (с 10 до 20 ежедневно)
+					</p>
+	       			<form>
+						<button class="feedback" type="button">Форма обратной связи</button>
+					</form>
+				</div>
 			</section>
 	  	</main>
 	  	<footer class="main-footer">
@@ -183,7 +177,7 @@
 	  		</div>
 	      
 	      <!-- класс? -->
-			<section>
+			<section class="other">
 				<a href="#">Для поставщиков</a>
 				<a href="#">О производстве</a>
 				<a href="#">Наши документы</a>
@@ -194,29 +188,15 @@
 				<p>Сделано в <a href="http://www.htmlacademy.ru">HTML Academy*</a> 2017</p>
 			</section>
 	  	</footer>
-	    
-	    <!-- вверху должны быть, написал в навигации -->
-	  	
-	    <!-- вверху должны быть, написал в навигации -->
-	  	
-	    
-	  	<section class="modal-search">
-	      <!-- form -->
-	      <!-- input -->
-	  		<p class="caption-form-search">Поиск</p>
-	      <!--Этот что ищем вообще не надо -->
-	  		<span class="form-search">Что ищем?</span>
-	      <!-- /form -->
-	  	</section>
-	    
-	    <!-- эту секцию попробуй сделать сам правильно. Инпут , форм , кнопки и тд -->
 	  	<section class="form-feedback">
 	  		<p class="caption-form-feedback">Мы обязательно вам ответим!</p>
-	  		<span class="name-feedback">Как вас зовут?</span>
-	  		<span class="email-feedback">Ваша почта для ответа</span>
-	  		<span class="text-feedback">Напишите что-нибудь...</span>
-			<span class="botton-send">Отправить</span>
-	  		<span class="botton-close">X</span>
+	  		<form>
+	  		<p><input class="name-feedback" type="text" name="name" value="Как вас зовут?"></p>
+	  		<p><input class="email-feedback" type="email" value="Ваша почта для ответа"></p>
+	  		<p><textarea class="text-feedback" rows="8" name="comment">Напишите что-нибудь...</textarea></p>
+			<p><input class="botton-send" type="button" value="Отправить"></p>
+	  		<!-- <span class="botton-close">X</span> -->
+	  		</form>
 	  	</section>
 	</section>
   </body>
