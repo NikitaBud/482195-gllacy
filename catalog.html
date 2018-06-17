@@ -27,24 +27,24 @@
 		  		<ul class="nav-users">
 		  			<li><a href="search">Поиск</a>
 	  					<form class="form-search" method="post" action="https://echo.htmlacademy.ru">
-							<input type="search" name="search" value="Что ищем?">
+							<label class="visually-hidden" for="search-page">Поиск по сайту</label>
+							<input type="search" id="search-page" name="search" value="Что ищем?">
 						</form>
 	          		</li>
 		  			<li><p><a href="login">Вход</a></p>
 		          		<section class="form-login">		      				
 			      			<form method="post" action="https://echo.htmlacademy.ru" class="from-entrance">
-			       				<p><label>Электронная почта
-			       					<input class="form-email" type="login" name="login" value="Электронная почта">
-			     				</label></p>
-			     				<p><label>Пароль
-			     					<input class="form-password" type="password" name="login" value="Пароль">
-			     				</label></p>
-			     		  		<p><button class="button-entrence" type="button" name="exit" value="Войти">Войти</button></p>
-					  			<!-- <div class="password-sign-up"> Не уверен что этот div вообще нужен -->
-                   <!-- НУЖЕН. добавь --> 
-					  			<p><a href="https://echo.htmlacademy.ru">Забыли пароль?</a></p>
-					  			<p><a href="https://echo.htmlacademy.ru">Новая регистрация</a></p>
-					  			<!-- </div> -->
+			       				<p><label for="email">Электронная почта</label>
+			       					<input class="form-email" type="login" id="email" name="login" placeholder="Электронная почта">
+			     				</p>
+			     				<p><label for="password">Пароль</label>
+			     					<input class="form-password" type="password" id="password" name="login" placeholder="Пароль">
+			     				</p>
+			     		  		<p><button class="button-entrence" type="button" name="button-entrence">Войти</button></p>
+					  			<div class="password-sign-up">
+						  			<p><a href="https://echo.htmlacademy.ru">Забыли пароль?</a></p>
+						  			<p><a href="https://echo.htmlacademy.ru">Новая регистрация</a></p>
+					  			</div>
 		      				</form>
 		  				</section>
 	          		</li>
@@ -145,7 +145,7 @@
   			<ul class="catalog-list">
   				<li class="catalog-item">
   					<figure>
-  						<a><img src="img/p-1.jpg" alt=""></a>
+  						<a><img src="img/p-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовыой стружкой"></a>
   						<p class="price">310Р/<sub>кг</sub></p>
   					</figure>
   					<p class="description"><a href="#">Сливочное с апельсиновым джемом и цитрусовыой стружкой</a></p>
@@ -153,7 +153,7 @@
   				</li>
   				<li class="catalog-item">
 	  				<figure>
-	  					<a href="#"><img src="img/p-2.jpg" alt=""></a>
+	  					<a href="#"><img src="img/p-2.jpg" alt="Сливочно-кофейное скусочками шоколада"></a>
 	  					<p class="price">380Р/<sub>кг</sub></p>
 	  				</figure>
 	  				<p class="description"><a href="#">Сливочно-кофейное скусочками шоколада</a></p>
@@ -161,7 +161,7 @@
   				</li>
   				<li class="catalog-item">
 	  				<figure>
-	  					<a href="#"><img src="img/p-3.jpg" alt=""></a>
+	  					<a href="#"><img src="img/p-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада"></a>
 	  					<p class="price">355Р/<sub>кг</sub></p>
 	  				</figure>
   					<p class="description"><a>Сливочно-клубничное с присыпкой из белого шоколада</a></p>
@@ -169,7 +169,7 @@
   				</li>
   				<li class="catalog-item">
 	  				<figure>
-	  					<a href="#"><img src="img/p-4.jpg" alt=""></a>
+	  					<a href="#"><img src="img/p-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой"></a>
 	  					<p class="price">415Р/<sub>кг</sub></p>
   					</figure>
   					<p class="description"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
@@ -177,7 +177,7 @@
   				</li>
   				<li class="catalog-item">
 	  				<figure>
-	  					<a href="#"><img src="img/11.jpg" alt=""></a>
+	  					<a href="#"><img src="img/11.jpg" alt="Сливочное с брусничным джемом"></a>
 	  					<p class="price">325Р/<sub>кг</sub></p>
 	  				</figure>
   					<p class="description"><a href="#">Сливочное с брусничным джемом</a></p>
@@ -185,7 +185,7 @@
   				</li>
   				<li class="catalog-item">
 	  				<figure>
-	  					<a href="#"><img src="img/12.jpg" alt=""></a>
+	  					<a href="#"><img src="img/12.jpg" alt="Сливочно-черничное с цельными ягодами черники"></a>
 	  					<p class="price">410Р/<sub>кг</sub></p>
 	  				</figure>
   					<p class="description"><a href="#">Сливочно-черничное с цельными ягодами черники</a></p>
@@ -193,7 +193,7 @@
   				</li>
   				<li class="catalog-item">
   					<figure>
-	  					<a href="#"><img src="img/13.jpg" alt=""></a>
+	  					<a href="#"><img src="img/13.jpg" alt="Сливочно-лимонное с карамельной присыпкой"></a>
 	  					<p class="price">375Р/<sub>кг</sub></p>
   					</figure>
   					<p class="description"><a href="#">Сливочно-лимонное с карамельной присыпкой</a></p>
@@ -201,7 +201,7 @@
   				</li>
   				<li class="catalog-item">
 	  				<figure>
-	  					<a href="#"><img src="img/14.jpg" alt=""></a>
+	  					<a href="#"><img src="img/14.jpg" alt="Сливочное с шоколадной стружкой"></a>
 	  					<p class="price">320Р/<sub>кг</sub></p>
   					</figure>
   					<p class="description"><a href="#">Сливочное с шоколадной стружкой</a></p>
@@ -209,7 +209,7 @@
   				</li>
   				<li class="catalog-item">
 	  				<figure>	
-	  					<a href="#"><img src="img/21.jpg" alt=""></a>
+	  					<a href="#"><img src="img/21.jpg" alt="Сливочно-ванильное с кусочками шоколада"></a>
 	  					<p class="price">440Р/<sub>кг</sub></p>
   					</figure>
   					<p class="description"><a href="#">Сливочно-ванильное с кусочками шоколада</a></p>
@@ -217,7 +217,7 @@
   				</li>
   				<li class="catalog-item">
 	  				<figure>	
-	  					<a href="#"><img src="img/22.jpg" alt=""></a>
+	  					<a href="#"><img src="img/22.jpg" alt="Сливочное с ментоловом сиропом"></a>
 	  					<p class="price">435Р/<sub>кг</sub></p>
 					</figure>
   					<p class="description"><a href="#">Сливочное с ментоловом сиропом</a></p>
@@ -225,7 +225,7 @@
   				</li>
   				<li class="catalog-item">
 	  				<figure>	
-	  					<a href="#"><img src="img/23.jpg" alt=""></a>
+	  					<a href="#"><img src="img/23.jpg" alt="Сливочное с кусочкми черного шоколада"></a>
 	  					<p class="price">355Р/<sub>кг</sub></p>
   					</figure>
   					<p class="description"><a href="#">Сливочное с кусочкми черного шоколада</a></p>
@@ -233,7 +233,7 @@
   				</li>
   				<li class="catalog-item">
 	  				<figure>	
-	  					<a href="#"><img src="img/24.jpg" alt=""></a>
+	  					<a href="#"><img src="img/24.jpg" alt="Сливочное с мятным сиропом"></a>
 	  					<p class="price">420Р/<sub>кг</sub></p>
   					</figure>
   					<p class="description"><a href="#">Сливочное с мятным сиропом</a></p>
@@ -241,11 +241,11 @@
   				</li>
   			</ul>
   			<ul class="pagination-list">
-  				<li class="pagination-item"><a href="#"></a>1</li>
-  				<li class="pagination-item"><a href="#"></a>2</li>
-  				<li class="pagination-item"><a href="#"></a>3</li>
-  				<li class="pagination-item"><a href="#"></a>4</li>
-  				<li class="pagination-item"><a href="#"></a>5</li>
+  				<li class="pagination-item"><a href="#">1</a></li>
+  				<li class="pagination-item"><a href="#">2</a></li>
+  				<li class="pagination-item"><a href="#">3</a></li>
+  				<li class="pagination-item"><a href="#">4</a></li>
+  				<li class="pagination-item"><a href="#">5</a></li>
   			</ul>
   		</section>
   	</main>

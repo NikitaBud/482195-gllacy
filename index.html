@@ -9,7 +9,7 @@
   	<section class="page">
 	  	<header class="main-header">
 	  		<a class="main-logo">
-	  			<img src="img/logo.svg" width="160" height="70" alt="GllacyShop">
+	  			<img src="img/logo.svg" width="160" height="70" alt="Логотип GllacyShop">
 	  		</a>
 	  		<nav class="main-nav main-menu">
 	  			<ul class="nav-page">
@@ -28,23 +28,24 @@
 		  		<ul class="nav-users">
 		  			<li><a href="search">Поиск</a>
 	  					<form class="form-search" method="post" action="https://echo.htmlacademy.ru">
-							<input type="search" name="search" placeholder="Что ищем?">
+							<label class="visually-hidden" for="search-in-page">Поиск по сайту</label>
+							<input type="search" name="search" id="search-in-page" placeholder="Что ищем?">
 						</form>
 	          		</li>
 		  			<li><p><a href="login">Вход</a></p>
 		          		<section class="form-login">		      				
 			      			<form method="post" action="https://echo.htmlacademy.ru" class="from-entrance">
-			       				<p><label>Электронная почта
-			       					<input class="form-email" type="login" name="login" placeholder="Электронная почта">
-			     				</label></p>
-			     				<p><label>Пароль
-			     					<input class="form-password" type="password" name="login" placeholder="Пароль">
-			     				</label></p>
-			     		  		<p><button class="button-entrence" type="button" name="exit" value="Войти">Войти</button></p>
-					  			<!-- <div class="password-sign-up"> Не уверен что этот div вообще нужен -->
-					  			<p><a href="https://echo.htmlacademy.ru">Забыли пароль?</a></p>
-					  			<p><a href="https://echo.htmlacademy.ru">Новая регистрация</a></p>
-					  			<!-- </div> -->
+			       				<p><label for="email">Электронная почта</label>
+			       					<input class="form-email" type="login" id="email" name="login" placeholder="Электронная почта">
+			     				</p>
+			     				<p><label for="password">Пароль</label>
+			     					<input class="form-password" type="password" id="password" name="login" placeholder="Пароль">
+			     				</p>
+			     		  		<p><button class="button-entrence" type="button" name="button-entrence">Войти</button></p>
+					  			<div class="password-sign-up">
+						  			<p><a href="https://echo.htmlacademy.ru">Забыли пароль?</a></p>
+						  			<p><a href="https://echo.htmlacademy.ru">Новая регистрация</a></p>
+					  			</div>
 		      				</form>
 		  				</section>
 	          		</li>
@@ -138,19 +139,17 @@
 	  			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 	  			<!-- это инпут -->
 	        	<form method="post" action="https://echo.htmlacademy.ru">
-	        		<label>Электронная почта
-	        		<input class="email-form" type="email" placeholder="Электронная почта">
-	        		</label>
-	  			<input class="botton-email-form" type="button" value="Отправить">
+	        		<label for="email-subscription">Электронная почта</label>
+	        		<input class="email-form" type="email" id="email-subscription" placeholder="Электронная почта">
+	       			<button class="botton-email-form" type="button" value="Отправить">Отправить</button>
 	  			</form>
 	  		</section>
 	      
 	  		<section class="map">
 	  			<div class="addres">
 					<p>Адрес главного офиса и офлайн-магазина:<br>
-          <!-- а чё em ? -->  
-					<em>ул. Большая Конюшенная<br>
-					    19/8, Санкт-Петербург</em>
+					   ул. Большая Конюшенная<br>
+					   19/8, Санкт-Петербург
 					</p>
 					<p>Для заказа по телефону:<br>
 				    <a href="">8 812 450-25-25</a><br>
@@ -160,7 +159,7 @@
 						<button class="feedback" type="button">Форма обратной связи</button>
 					</form>
 				</div>
-				<div><img src="img/map.jpg" alt="Карта"></div>
+				<div><img src="img/map.jpg" alt="Карта с местонахождением магазина"></div>
 			</section>
 	  	</main>
 	  	<footer class="main-footer">
@@ -187,10 +186,13 @@
 	  	<section class="form-feedback">
 	  		<p class="caption-form-feedback">Мы обязательно вам ответим!</p>
 	  		<form method="post" action="https://echo.htmlacademy.ru">
-	  		<p><input class="name-feedback" type="text" name="name" placeholder="Как вас зовут?"></p>
-	  		<p><input class="email-feedback" type="email" placeholder="Ваша почта для ответа"></p>
-	  		<p><textarea class="text-feedback" rows="8" name="comment" placeholder="Напишите что-нибудь..."></textarea></p>
-			<p><input class="botton-send" type="button" value="Отправить"></p>
+	  		<p><label class="visually-hidden" for="name-feedback">Ваше имя</label>
+	  			<input class="name-feedback" type="text" id="name-feedback" name="name" placeholder="Как вас зовут?"></p>
+	  		<p><label class="visually-hidden" for="email-feedback">Ваша почта для ответа</label>
+	  			<input class="email-feedback" type="email" id="email-feedback" placeholder="Ваша почта для ответа"></p>
+	  		<p><label class="visually-hidden" for="comment" >Поле для комментария</label>
+	  			<textarea class="text-feedback" rows="8" id="comment" name="comment" placeholder="Напишите что-нибудь..."></textarea></p>
+			<button class="botton-send" type="button" value="send">Оправить</button>
 	  		<!-- <span class="botton-close">X</span> -->
 	  		</form>
 	  	</section>
