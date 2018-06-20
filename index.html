@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
   </head>
   <body>
@@ -14,7 +16,7 @@
 	  		<nav class="main-nav main-menu">
 	  			<ul class="nav-page">
 		  			<li><a href="catalog.html">Каталог</a>
-			  			<ul>
+			  			<ul class="submenu">
 			  			<li><a href="#">Новинки</a></li>
 			  			<li><a href="#">Сливочное</a></li>
 			  			<li><a href="#">Щербеты</a></li>
@@ -54,7 +56,7 @@
 	  		</nav>  
 	  		<section class="time-tell">
 	        	<p>С 10 до 20, ежедневно<br>
-				<em>8 812 450-25-25</em>
+				<a href="">8 812 450-25-25</a>
 	  			</p>
 	  		</section>		
 	  	</header>
@@ -83,50 +85,56 @@
 	  			</section>
 	      <!-- Для промоблоков нужен общий родитель -->
 		  	<section class="promo">
-		  		<section class="promo-jam">
-		  			<h2>Малинка даром!</h2>
-		  			<p>При покупке 2кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-		  			<a href="https://echo.htmlacademy.ru" class="button-give-jam">Хочу варенье!</a>
-		  		</section>
-		  		<section class="promo-chocolate">
-		  			<h2>Шоколадки даром!</h2>
-		  			<p>При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-		  			<a class="button-give-chocolate" href="https://echo.htmlacademy.ru">Хочу шоколадки!</a>
+			  	<section class="promo-stock">
+			  		<section class="promo-jam">
+			  			<h2>Малинка даром!</h2>
+			  			<p>При покупке 2кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+			  			<a href="https://echo.htmlacademy.ru" class="button-give-jam">Хочу варенье!</a>
+			  		</section>
+			  		<section class="promo-chocolate">
+			  			<h2>Шоколадки даром!</h2>
+			  			<p>При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+			  			<a class="button-give-chocolate" href="https://echo.htmlacademy.ru">Хочу шоколадки!</a>
+			  		</section>
+			  	</section>
+		  		<section class="ice-top">
+					<ul>
+						<li>
+		                    <figure>
+								<img src="img/p-1.jpg" width="270" height="270" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
+								<p>310R/<sub>кг</sub></p>
+							</figure>
+							<a href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+		          		</li>
+		           		<li>
+							<figure>
+								<img src="img/p-2.jpg" width="270" height="270" alt="Сливочно-кофейное мороженое с кусочками шоколада">
+								<p>380R/<sub>кг</sub></p>
+							</figure>	
+							<a href="">Сливочно-кофейное с кусочками шоколада</a>			
+						</li>
+						<li>
+							<figure>
+								<img src="img/p-3.jpg" width="270" height="270" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
+								<p>355R/<sub>кг</sub></p>
+							</figure>
+							<a href="">Сливочно-клубничное с присыпкой из белого шоколада</a>
+	 					</li>
+						<li>
+							<figure>
+								<img src="img/p-4.jpg" width="270" height="270" alt="Сливочное крем-брюле с карамельной подливкой">
+								<p>415R/<sub>кг</sub></p>
+							</figure>
+							<a href="">Сливочное крем-брюле с карамельной подливкой</a>
+						</li>
+					</ul>
 		  		</section>
 		  	</section>
-	  		<section class="ice-top">
-				<ul>
-					<li>
-	                    <figure>
-							<img src="img/p-1.jpg" width="270" height="270" alt="Сливочное мороженое с апельсиновым джемом">
-							<p>310R<sub>/кг</sub></p>
-						</figure> <!-- Не уверен/ может лучше использовать figcaption -->
-	          		</li>
-	           		<li>
-						<figure>
-							<img src="img/p-2.jpg" width="270" height="270" alt="Шоколадное мороженое">
-							<p>380R<sub>/кг</sub></p>
-						</figure>						
-					</li>
-					<li>
-						<figure>
-							<img src="img/p-3.jpg" width="270" height="270" alt="Клубничное мороженое">
-							<p>355R<sub>/кг</sub></p>
-						</figure>
- 					</li>
-					<li>
-						<figure>
-							<img src="img/p-4.jpg" width="270" height="270" alt="Крем-брюле">
-							<p>415R<sub>/кг</sub></p>
-						</figure>
-					</li>
-				</ul>
-	  		</section>
 	       	<section class="features-container">
 	  			<h3>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
 		           	<ul class="advantages-list">
 			  			<li class="production">Все наше мороженое изготавливается на собственном прозводстве, с использованием современного оборудования и проверенных временем технологий.</li>
-			  			<li class="products">Для приготовления мороженого используются настоящиее сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологического чистого сырья.</p>
+			  			<li class="products">Для приготовления мороженого используются настоящиее сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологического чистого сырья.</li>
 			  			<li class="cooperation">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долго временное сотрудничество.</li>
 			  			<li class="delivery-save">Доставка нашего мороженого до заказчика осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
 		  			</ul>
