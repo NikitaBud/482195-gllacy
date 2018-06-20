@@ -15,7 +15,7 @@
 	  		<nav class="main-nav main-menu">
 	  			<ul class="nav-page">
 		  			<li><a href="catalog.html">Каталог</a>
-			  			<ul>
+			  			<ul class="submenu">
 			  			<li><a href="#">Новинки</a></li>
 			  			<li><a href="#">Сливочное</a></li>
 			  			<li><a href="#">Щербеты</a></li>
@@ -30,12 +30,12 @@
 		  			<li><a href="search">Поиск</a>
 	  					<form class="form-search" method="post" action="https://echo.htmlacademy.ru">
 							<label class="visually-hidden" for="search-page">Поиск по сайту</label>
-							<input type="search" id="search-page" name="search" value="Что ищем?">
+							<input type="search" id="search-page" name="search" placeholder="Что ищем?">
 						</form>
 	          		</li>
 		  			<li><p><a href="login">Вход</a></p>
-		          		<section class="form-login">		      				
-			      			<form method="post" action="https://echo.htmlacademy.ru" class="from-entrance">
+		          		<section class="form-login">
+		          			<form method="post" action="https://echo.htmlacademy.ru" class="from-entrance">
 			       				<p><label for="email">Электронная почта</label>
 			       					<input class="form-email" type="login" id="email" name="login" placeholder="Электронная почта">
 			     				</p>
@@ -72,7 +72,7 @@
 	  		</nav>  
 	  		<section class="time-tell">
 	        	<p>С 10 до 20, ежедневно<br>
-				<em>8 812 450-25-25</em>
+				<a href="">8 812 450-25-25</a>
 	  			</p>
 	  		</section>		
 	  	</header>
@@ -139,7 +139,7 @@
 			  					джемы
 			  				</label>
 			  			</fieldset>
-			  			<button type="submit" value="send">Применить</button>
+			  			<button class="button-apply" type="submit" value="send">Применить</button>
 						</form>
 
   		<section class="catalog">
@@ -260,14 +260,16 @@
   			<li><a href="#">Вконтакте</a></li>
   			</ul>
   		</div>
-		<section>
+		<section class="other">
 			<a href="#">Для поставщиков</a>
 			<a href="#">О производстве</a>
 			<a href="#">Наши документы</a>
 			<a href="#">Экологические стандарты</a>
 		</section>
-		<img src="img/logo-htmlacademy.svg" width="115" height="50" alt="Логотип HTML Academy">
-		<p>Сделано в <a href="http://www.htmlacademy.ru">HTML Academy</a>* 2017</p>
+		<section class="copyright">
+				<p><a href="http://www.htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="50" alt="Логотип HTML Academy"></a></p>
+				<p>Сделано в <a href="http://www.htmlacademy.ru">HTML Academy*</a> 2017</p>
+			</section>
   	</footer>
    
    <!-- баскет должна быть вверху

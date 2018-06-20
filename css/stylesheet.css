@@ -38,6 +38,12 @@ a {
 	color: #ffcc99;
 }
 
+.password-sign-up a {
+	font-size: 13px;
+	line-height: 24px;
+	color: #000000;
+}
+
 .time-tell p {
 	font-size: 14px;
 	line-height: 16px;
@@ -66,12 +72,20 @@ a {
 }
 
 .slider-item a:hover,
-.promo-stock a:hover {
+.promo-stock a:hover,
+.botton-email-form:hover,
+.feedback:hover,
+.botton-send:hover,
+.button-entrence:hover {
 	background-color: #f17f65;
 }
 
 .slider-item a:focus,
-.promo-stock a:focus {
+.promo-stock a:focus,
+.botton-email-form:focus,
+.feedback:focus,
+.botton-send:focus,
+.button-entrence:focus {
 	background-color: #d84833;
 }
 
@@ -127,4 +141,96 @@ a {
 	font-size: 24px;
 	line-height: 30px;
 	color: #323232;
+}
+
+.botton-email-form,
+.feedback,
+.botton-send,
+.button-entrence {
+	font-size: 18px;
+	line-height: 24px;
+	background-color: #ed5c3d;
+}
+
+.addres p {
+	font-size: 14px;
+	line-height: 20px;
+
+}
+
+.addres b {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+}
+
+.addres a {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.other a {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.other a:hover {
+	font-weight: 600;
+}
+
+.copyright p {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.caption-form-feedback {
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.filter-control select {
+	color: #ffffff;
+	background-color: #9db1a5;
+}
+
+.filter-control select:hover {
+	color: #000000;
+}
+
+.button-apply {
+	background-color: #9cb0a4;
+	color: #ffffff;
+	font-weight: 600;
+}
+
+.button-apply:hover {
+	background-color: #fbfcfb;
+	color: #000000;
+	font-weight: 600;
+}
+
+.button-apply:focus {
+	background-color: #eaeaea;
+	color: #333333;
+	font-weight: 600;
+}
+
+.pagination-list {
+	list-style: none;
+}
+
+.pagination-item a {
+	text-decoration: none;
+}
+
+.pagination-item a:hover {
+	background-color: #9db1a5;
+}
+
+.pagination-item a:focus {
+	background-color: #ffffff;
 }
