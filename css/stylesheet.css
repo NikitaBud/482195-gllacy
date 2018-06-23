@@ -247,6 +247,7 @@ a {
 .main-footer .container {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	width: 1146px;
 }
 .social-footer {
@@ -317,4 +318,29 @@ a {
 
 .pagination-item a:focus {
 	background-color: #ffffff;
+}
+
+.filters-control .container {
+	display: flex;
+	margin: 0;
+	width: 865px;
+	min-height: 139px;
+}
+.catalog .container {
+	width: 1146px;
+	margin: 0;
+}
+.catalog ul {
+	list-style: none;
+}
+.catalog-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.catalog-item {
+	width: 267px;
+	min-height: 336px;
+
 }
