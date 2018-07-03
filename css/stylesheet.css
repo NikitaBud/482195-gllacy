@@ -186,7 +186,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 970px;
+	width: 980px;
 	margin: 0;
 	padding: 0;
 
@@ -205,7 +205,32 @@ a {
   line-height: 18px;
   color: #ffffff;
 }
-.nav-page a {
+.nav-page .nav-link {
+  display: block;
+  padding: 8px 15px;
+}
+.nav-link:hover {
+	background-color: #fff;
+	border-radius: 25px;
+	color: #000;
+	padding: 8px 15px;
+}
+.nav-item:nth-child(1) {
+  position: relative;
+}
+.nav-item .submenu {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #fff;
+}
+.nav-item:nth-child(1):hover {
   display: block;
 }
 .nav-users {
@@ -216,23 +241,65 @@ a {
   align-items: center;
   
   list-style: none;
-  width: 245px;
+  min-width: 245px;
   margin: 0;
   padding: 0;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
 }
-/* .container {
-	width: 980px;
-	margin: 0 auto;
-	padding: 0 10px;
-} */
+
 .nav-users .search-link {
   background-color: #9db1a5;
   width: 33px;
   height: 33px;
   border-radius: 15px;
+}
+.search-item {
+  position: relative;
+  margin-left: 10px;
+}
+
+.nav-users > li:hover .search-submenu {
+  display: block;
+}
+.search-link {
+  display: inline-block;
+}
+.search-link::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 9px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/loupe.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  stroke: #000;
+}
+
+.nav-users .search-submenu {
+  list-style: none;
+  display: none;
+  top: 35px;
+  right: 15px;
+  width: 343px;
+  height: 85px;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  position: absolute;
+  background-color: #f8f7f4;
+  border-radius: 10px;
+}
+
+.input-search {
+  width: 310px;
+  height: 45px;
+  border-radius: 10px;
+  margin: 20px 15px;
+  padding: 10px 15px;
 }
 .nav-users .login-link {
   
@@ -254,7 +321,50 @@ a {
   background-image: url("../img/entrance.svg");
   opacity: 0.5;
   background-repeat: no-repeat;
-  background-position: 0 0;;\
+  background-position: 0 0;
+}
+.nav-users .login-submenu {
+  list-style: none;
+  display: none;
+  top: 65px;
+  right: -95px;
+  width: 277px;
+  height: 215px;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  position: absolute;
+  background-color: #f8f7f4;
+  border-radius: 10px;
+}
+.nav-users > li:hover .login-submenu {
+  display: block;
+}
+.login-submenu-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.login-submenu p {
+	margin: 0;
+	padding: 0;
+}
+.form-email, 
+.form-password {
+  width: 240px;
+  height: 45px;
+  border-radius: 10px;
+  margin: 20px 20px 0 20px;
+  padding: 10px 15px;
+}
+.login-submenu .button {
+  display: inline-block;
+  min-width: 100px;
+  height: 45px;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  padding: 12px 25px;
 }
 .nav-users .basket-link {
   position: relative;
@@ -282,17 +392,17 @@ a {
 .nav-users {
   list-style: none;
 }
-.nav-page a:hover, 
+/*.nav-page a:hover, 
 .nav-page a:focus, 
 .nav-users a:hover, 
 .nav-users a:focus {
   color: #ffcc99;
-}
+}*/
 .password-sign-up a {
   font-size: 13px;
   line-height: 24px;
   color: #000000;
-}
+} 
 .time-tell {
 	display: block;
 	/* ФЛОАТЫ ЗАППРЕЩЕНО ИСПОЛЬЗОВАТЬ */
@@ -398,6 +508,7 @@ a {
   flex-direction: column;
 
   width: 267px;
+  min-height: 325px;
   margin: 0;
   padding: 0;
   
@@ -824,13 +935,17 @@ a {
 .catalog-item {
   display: flex;
   flex-direction: column;
-
+  justify-content: space-between;
+  outline: 2px solid red;
   width: 267px;
+  min-height: 325px;
   margin: 0;
   padding: 0;
 }
 .catalog-item .description {
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .pagination-list {
